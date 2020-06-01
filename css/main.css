@@ -1,0 +1,58 @@
+body {
+    background-color: #fdfdfd;
+}
+.topbar {
+    height: 3em;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Libre Baskerville', serif;
+    font-variant-caps: small-caps;
+    color: #fdfdfd;
+}
+
+.photos {
+    margin: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.photos img {
+    height: 17em;
+    width: 20em;
+    object-fit: cover;
+    margin: 1em;
+    padding: 1em;
+    border: 0.2em solid #444;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease-in-out;
+}
+
+.photos img:hover {
+    filter: grayscale(0%);
+}
+
+.photos img:webkit-fullscreen {
+    filter: grayscale(0%);
+    object-fit: contain;
+}
+
+.photos img:moz-fullscreen {
+    filter: grayscale(0%);
+    object-fit: contain;
+}
+
+.photos img:ms-fullscreen {
+    width: 100%;
+    filter: grayscale(0%);
+    object-fit: contain;
+}
+ 
+.photos img:fullscreen {
+    filter: grayscale(0%);
+    object-fit: contain;
+}
