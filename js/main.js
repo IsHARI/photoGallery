@@ -12,7 +12,7 @@
     // onDocumentReady
     $((ev) => {
         imageUrls.forEach((url) => {
-            $('.photos').append($('<img src='+url+' \>'));
+            $('.photos').append($('<img src='+url+' />'));
         });
     });
 })(jQuery);
