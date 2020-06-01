@@ -14,5 +14,22 @@
         imageUrls.forEach((url) => {
             $('.photos').append($('<img src='+url+' />'));
         });
+
+        $('.photos img').click((ev) => {
+            var target = ev.target;
+
+            if (target.requestFullscreen) {
+               target.requestFullscreen(); 
+            } 
+            else if (target.msRequestFullscreen) {
+                target.msRequestFullscreen(); 
+            }
+            else if (target.mozRequestFullscreen) {
+                target.mozRequestFullscreen(); 
+            }
+            else if (target.webkitRequestFullscreen) {
+                target.webkitRequestFullscreen(); 
+            }
+        });
     });
 })(jQuery);
