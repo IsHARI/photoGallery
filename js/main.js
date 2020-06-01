@@ -4,7 +4,7 @@
     var imageUrls;
 
     $.ajax({ 
-        url:  '/urls.json', 
+        url:  'urls.json', 
         dataType: 'json', async: false, 
         success: function (urls) { imageUrls = urls }
     });
