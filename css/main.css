@@ -30,6 +30,7 @@ body {
     border: 0.2em solid #444;
     filter: grayscale(100%);
     transition: filter 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .photos img:hover {
